@@ -8,8 +8,12 @@ from tensorflow.keras.models import Model
 from PIL import Image
 
 IMG_SIZE = 224
-classes = ["Non Demented", "Very Mild Demented"
-           "MildDemented", "Moderatedemented"]
+classes = [
+    "Non Demented",
+    "Very Mild Demented",
+    "Mild Demented",
+    "Moderate Demented"
+]
 
 # ---------------- LOAD MODELS ---------------- #
 
@@ -37,7 +41,7 @@ def is_grayscale(image, threshold=25):
     return diff < threshold
 
 
-def has_brain_structure(image):
+
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
     # Improve contrast
