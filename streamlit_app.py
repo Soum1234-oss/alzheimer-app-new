@@ -1,4 +1,5 @@
 import streamlit as st
+'''
 import numpy as np
 import cv2
 import joblib
@@ -131,3 +132,6 @@ if uploaded_file is not None:
     st.pyplot(fig)
 
 st.info("System uses validation + ML prediction. Only grayscale MRI scans are strictly accepted.")
+'''
+st.title("APP IS WORKING")
+st.write("If you see this, deployment is correct")
